@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Subtle border for input */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensure content adjusts for different screen sizes */
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 20%;
+  background-color: #2c3e50; /* Darker blue/grey for sidebar */
+  padding: 20px;
+  color: white; /* White text for sidebar */
+  border-radius: 8px; /* Rounded corners for the sidebar */
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1abc9c; /* Accent color underline */
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ecf0f1; /* Light grey for sidebar links */
+  font-weight: bold; /* Bold links */
+}
+
+.sidebar ul li a:hover {
+  color: #1abc9c; /* Hover effect with accent color */
+}
+
+/* Content Area Styles */
+.content {
+  width: 75%; /* Use a larger width for content */
+  margin-left: 5%; /* Add some space between sidebar and content */
+  padding: 20px;
+  background-color: #ffffff; /* White background for content area */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container .card {
+  margin: 20px;
+  flex: 1 1 calc(25% - 40px);
+  box-sizing: border-box;
+  border-radius: 8px; /* Rounded corners for cards */
+  overflow: hidden; /* Prevent overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow to cards */
+}
+
+.card img {
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 2px solid #1abc9c; /* Accent color at the bottom of image */
+}
+
+.card .text-center {
+  text-align: center;
+  font-size: 16px;
+  color: #2c3e50; /* Darker text for card titles */
+}
+
+/* Carousel Styles */
+.carousel-item img {
+  width: 500%; /* Ensure images take up full width */
+  height: 5000px; /* Fixed height for carousel images */
+  object-fit: cover; /* Ensure the entire image fits within the carousel item */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50; /* Match sidebar color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+  margin-top: auto; /* Push footer to the bottom */
+}
